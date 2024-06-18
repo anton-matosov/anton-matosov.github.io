@@ -73,7 +73,7 @@ const currentPosts = sortedPosts.slice(indexOfFirstPost, indexOfLastPost);
       <div class="row">
         <div class="mx-auto px-0 lg:col-8">
           <div class="rounded-xl p-[60px] shadow">
-            {currentPosts.map((post, i) => <Post post={post} />)}
+            {currentPosts.map((post, _) => <Post post={post} />)}
             <Pagination totalPages={totalPages} currentPage={currentPage} />
           </div>
         </div>
